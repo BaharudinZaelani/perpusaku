@@ -1,10 +1,8 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
+[![Contributors][contributors-shield]][https://github.com/BaharudinZaelani/perpusaku/graphs/contributors]
+[![Forks][forks-shield]][https://github.com/BaharudinZaelani/perpusaku/network/members]
+[![Stargazers][stars-shield]][https://github.com/BaharudinZaelani/perpusaku/stargazers]
+[![Issues][issues-shield]][https://github.com/BaharudinZaelani/perpusaku/issues]
+<!-- [![MIT License][license-shield]][license-url] -->
 
 
 ### About 
