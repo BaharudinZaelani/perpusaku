@@ -1,8 +1,3 @@
-[![Contributors][contributors-shield]][https://github.com/BaharudinZaelani/perpusaku/graphs/contributors]
-[![Forks][forks-shield]][https://github.com/BaharudinZaelani/perpusaku/network/members]
-[![Stargazers][stars-shield]][https://github.com/BaharudinZaelani/perpusaku/stargazers]
-[![Issues][issues-shield]][https://github.com/BaharudinZaelani/perpusaku/issues]
-<!-- [![MIT License][license-shield]][license-url] -->
 
 
 ### About 
@@ -18,5 +13,6 @@ Maaf untuk dokumentasi yang sangat simpel, karena saya tidak bisa membuat kata-k
 - Menambah fungsi       :: "src/Function.php", untuk cara memanggil file ini hanya panggil 1 file "init.php"
 - Mengatur Tampilan     :: "views/content/", tambahkan sesuai keinginan. Note : Tidak usah mengetik ulang head tag atau html tag
 
-### Author
-@BaharDev
+### Authors
+created by [@baharDev](https://www.youtube.com/c/BaharDev) ![love](http://ForTheBadge.com/images/badges/built-with-love.svg)
+
