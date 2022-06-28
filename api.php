@@ -3,9 +3,9 @@
 include "src/init.php";
 
 // config
-setWebTitle("PerpusAKU - About");
-setTitle("Tentang Web");
-setContentFile("about");
+setWebTitle("PerpusAKU - API");
+setTitle("PerpusAKU");
+setContentFile("api");
 
 // call view
 include "views/app.php";

@@ -3,9 +3,9 @@
     
     <!-- content -->
     <div class="content">
-        <div class="items" id="items">
+        
+        <div class="items" id="items"></div>
 
-        </div>
     </div>
 </div>
 <script>
@@ -26,10 +26,9 @@
             let pengarang = data[i].pengarang;
             let tahun_terbit = data[i].tahun_terbit;
             
-            let div = '<a href="#" class="card"> <img src="<?= asset("img/komik1.jpg"); ?>" alt=""> <div class="card-body"> <div class="card-title"> <h3>' + nama + '</h3> </div> <div class="card-description"> ' + deskripsi + ' </div> </div> </a>';
+            let div = '<a href="#" class="card"> <div class="card-body"> <div class="card-title"> <h3>' + nama + '</h3> </div> <div class="card-description"> ' + deskripsi + ' </div> </div> </a>';
             
             itemContainer.appendChild(stringToHtml(div));
-            // console.log(stringToHtml(div))
         }
     }
 </script>

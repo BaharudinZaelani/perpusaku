@@ -45,7 +45,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 0 2px #0000003b;
     display: grid;
-    grid-template-columns: 0.85fr 1.5fr;
+    padding: 12px;
 }
 .card:hover {
     box-shadow: 0px 0px 5px #0000003b;
@@ -55,6 +55,16 @@ body {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
-.card-title {
-    padding: 20px 0;
+
+/* table */
+table {
+    background-color: rgba(127, 255, 212, 0.288);
+    border-radius: 4px;
+    padding: 5px;
+}
+td, th {
+    border-radius: 4px;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
 }
