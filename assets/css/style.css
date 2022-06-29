@@ -8,7 +8,22 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* grid */
+.d-grid {
+    display: grid !important;
+}
+.d-grid.col-2 {
+    grid-gap: 12px;
+    grid-template-columns: 1fr 0.5fr;
+}
+
 /* app */
+.pt-1 {
+    margin-top: 12px;
+}
+.justify-start {
+    justify-content: start !important;
+}
 .wrp {
     width: 80vw;
     margin: auto;
@@ -27,8 +42,26 @@ body {
     color: black;
     background-color: aquamarine;
 }
+.header button {
+    margin-right: 12px;
+}
 .content {
     padding: 12px 0;
+}
+.d-flex {
+    display: flex;
+}
+.center-align {
+    justify-content: center;
+}
+
+/* coloring */
+.bg-danger {
+    background-color: rgb(247, 55, 55) !important;
+    color: white !important;
+}
+.text-danger {
+    color: rgb(247, 55, 55) !important;
 }
 
 /* card */
@@ -67,4 +100,36 @@ td, th {
     text-align: left;
     padding: 12px;
     border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+/* login */
+.login-form {
+    width: 50%;
+}
+.input-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 12px 0  ;
+}
+.input-form input {
+    padding: 12px;
+    outline: none;
+    border: 0;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.322);
+    border-radius: 5px;
+}
+
+/* button */
+.btn {
+    background-color: rgba(250, 235, 215, 0.507);
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline;
+    border: 0;
+    margin-right: 12px;
+}
+.btn:hover {
+    opacity: 1;
 }

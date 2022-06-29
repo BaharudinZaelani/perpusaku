@@ -1,6 +1,4 @@
 <?php 
-// start session
-session_start();
 
 // set web title
 function setWebTitle($value){
@@ -39,6 +37,11 @@ $title = "";
 function getNavbar(){
     global $title;
     include "views/components/navbar.php";
+}
+
+// components call
+function component($fileName){
+    include "views/components/" . $fileName . ".php";
 }
 
 // content view

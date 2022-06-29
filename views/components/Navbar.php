@@ -3,6 +3,8 @@
     <div class="tools">
         <a href="<?= URI ?>api.php">API</a>
         <a href="<?= URI ?>about.php">About Web</a>
-        <a href="<?= URI ?>login.php">Login</a>
+        <?php if( !isset($_SESSION['user']) ) : ?>
+            <a href="<?= URI ?>login.php">Login</a>
+        <?php endif; ?>
     </div>
 </div>

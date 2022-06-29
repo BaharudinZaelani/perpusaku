@@ -6,6 +6,9 @@
         <p>
             Aplikasi Perpustakaan berbasis website, dibuat untuk memenuhi tugas kuliah atau lebih tepatnya tugas besar atau tugas akhir semester 5 saya.
             <br>
+            <br>
+            Aplikasi ini Open source silahkan fork/download project di : <a target="_blank" href="https://github.com/BaharudinZaelani/perpusaku">https://github.com/BaharudinZaelani/perpusaku</a>
+            <br>
             Mohon maaf jika untuk warna dari website ini kurang cocok, lcd laptop saya kurang baik ntah kenapa suka ngeglitch engga jelas.
         </p>
 
