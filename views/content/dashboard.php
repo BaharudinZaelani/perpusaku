@@ -27,40 +27,88 @@ $bukus = getAllBuku();
             <h3>List Buku</h3>
             <div class="d-grid col-2">
                 <!-- col 1 -->
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama</th>
-                            <th>pengarang</th>
-                            <!-- <th>Deskripsi</th> -->
-                            <th>Tahun Terbit</th>
-                            <!-- <th>Aksi</th> -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- loop here -->
-                        <?php foreach( $bukus as $row ) : ?>
-                            <tr>
-                                <td><?= $row['id']?></td>
-                                <td><?= $row['nama']?></td>
-                                <td><?= $row['pengarang']?></td>
-                                <!-- <td><?= $row['deskripsi']?></td> -->
-                                <td><?= $row['tahun_terbit']?></td>
-                                <td>
-                                    <form method="post">
-                                        <button class="btn bg-danger">Hapus</button>
-                                        <button class="btn bg-success">Edit</button>
-                                    </form>
-                                </td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+                <div class="scroll">
+                    <div class="scroll">
+                        <table class="table" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>pengarang</th>
+                                    <!-- <th>Deskripsi</th> -->
+                                    <th>Tahun Terbit</th>
+                                    <!-- <th>Aksi</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- loop here -->
+                                <?php foreach( $bukus as $row ) : ?>
+                                    <tr>
+                                        <td><?= $row['id']?></td>
+                                        <td><?= $row['nama']?></td>
+                                        <td><?= $row['pengarang']?></td>
+                                        <!-- <td><?= $row['deskripsi']?></td> -->
+                                        <td><?= $row['tahun_terbit']?></td>
+                                        <td>
+                                            <form method="post">
+                                                <input type="text" hidden name="id" value="<?= $row['id']; ?>">
+                                                <button class="btn bg-danger" name="hapus">Hapus</button>
+                                                <a class="btn btn-success" href="edit.php/?key=edit&n=<?= $row['id']; ?>">Edit</a>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
                 <!-- col 2 -->
                 <div class="edit">
-                    Lorem, ipsum dolor.
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Peminjam</h4>
+                        </div>
+                    </div>
+
+                    <!-- loop peminjam here -->
+                    <?php foreach( $requestPinjam as $row ) : ?>
+                        <div class="card">
+                            <div class="card-body">
+                                <table>
+                                    <tr>
+                                        <td>Peminjam</td>
+                                        <td>: <?= $row['peminjam']; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>nama Buku</td>
+                                        <td>: 
+                                            <?php 
+                                            foreach ( $bukus as $buku ) {
+                                                if ( $row['buku_id'] == $buku['id'] ) {
+                                                    echo $buku['nama'];
+                                                    break;
+                                                }
+                                            }
+                                            ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tanggal meminjam</td>
+                                        <td>: <?= $row['created_at']; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <form method="post">
+                                                <input type="text" hidden name="idP" value="<?= $row['id'];?>">
+                                                <button name="hapusPeminjam" class="btn btn-danger">Hapus Data</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>

@@ -1,8 +1,11 @@
 <?php 
 
+$buku = getAllBuku();
+$pinjam = getAllBuku("SELECT * FROM request");
+
 $status = [
     "status" => "success",
-    "data" => getAllBuku()
+    "data" => $buku
 ];
 
 header("HTTP/1.1 200 OK");

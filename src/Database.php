@@ -15,6 +15,9 @@ function conn(){
 function queryOnce($query){
     global $conn;
     $result = mysqli_query($conn, $query);
+    if ( is_bool($result) ) {
+        return $result;
+    }
     return mysqli_fetch_assoc($result);
 }
 

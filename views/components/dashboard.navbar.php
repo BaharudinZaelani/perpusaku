@@ -56,6 +56,7 @@ if( isset($_POST['submitBuku']) ){
     echo "
         <script>alert('$nama berhasil ditambahkan !')</script>
     ";
+    redirect("/dashboard.php");
 }
 
 ?>

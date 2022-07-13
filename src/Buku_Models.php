@@ -7,9 +7,13 @@
 */
 
 // get all
-function getAllBuku(){
+function getAllBuku($q = NULL){
     global $conn;
-    $query = "SELECT * FROM buku";
+    if ( is_null($q) ) {
+        $query = "SELECT * FROM buku";
+    }else {
+        $query = $q;
+    }
     $exec = mysqli_query($conn, $query);
     $result = [];
     while ($row = mysqli_fetch_assoc($exec)) {

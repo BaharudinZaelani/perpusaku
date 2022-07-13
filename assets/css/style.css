@@ -125,11 +125,30 @@ td, th {
     opacity: 0.6;
     cursor: pointer;
     border-radius: 5px;
-    padding: 5px;
+    padding: 12px;
+    border:1px solid rgba(0, 0, 0, 0.24);
     display: inline;
     border: 0;
     margin-right: 12px;
 }
+a.btn {
+    text-decoration: none !important;
+    padding: 7px 15px;
+}
 .btn:hover {
     opacity: 1;
+}
+.btn-danger {
+    color: white;
+    background-color: rgb(254, 67, 67) !important;
+}
+.btn-success {
+    color: white;
+    background-color: rgb(78, 153, 78) !important;
+}
+
+.scroll {
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
 }

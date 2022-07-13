@@ -14,10 +14,17 @@ if ( isset($_GET['key']) ) {
         // jika getAll
         if( $key == "get_all" )
             include "get/getAll.php";
+            exit;
 
         // search ada
         if( $key == "get" AND isset($_GET['search']) )
             include "get/search.php";
+            exit;
+
+        // get request pinjam
+        if ( $key == "get_request" )
+            include "get/get_request.php"; 
+            exit;
     }
 
     // POST Request
